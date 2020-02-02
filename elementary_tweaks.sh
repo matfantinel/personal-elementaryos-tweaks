@@ -1,24 +1,24 @@
 #!/bin/bash
 
 #Enable ppas
-echo "Enabling ppas..."
+echo "----------------------------------- Enabling ppas..."
 sudo apt install software-properties-common -y
 
 #Install system76-power package for better power management
-echo "Installing system76-power..."
+echo "----------------------------------- Installing system76-power..."
 sudo apt-add-repository -y ppa:system76-dev/stable
 sudo apt update
 sudo apt install system76-power -y
 
 
 #Install elementary-tweaks
-echo "Installing elementary-tweaks..."
+echo "----------------------------------- Installing elementary-tweaks..."
 sudo add-apt-repository ppa:philip.scott/elementary-tweaks -y
 sudo apt install elementary-tweaks -y
 
 
 #Enable indicators
-echo "Enabling app indicators..."
+echo "----------------------------------- Enabling app indicators..."
 mkdir -p ~/.config/autostart
 cp /etc/xdg/autostart/indicator-application.desktop ~/.config/autostart/
 sed -i 's/^OnlyShowIn.*/OnlyShowIn=Unity;GNOME;Pantheon;/' ~/.config/autostart/indicator-application.desktop
