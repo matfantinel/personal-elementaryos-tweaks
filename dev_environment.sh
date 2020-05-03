@@ -5,7 +5,7 @@ echo "----------------------------------- Installing git"
 sudo apt install git -y
 
 git config --global user.name "Matheus Fantinel"
-git config --global user.email "matfantinel@gmail.com"
+git config --global user.email "matheus@fantinel.dev"
 
 #Install nodeJS
 echo "----------------------------------- Installing nodeJS"
