@@ -5,7 +5,7 @@ echo "----------------------------------- Installing git"
 sudo apt install git -y
 
 git config --global user.name "Matheus Fantinel"
-git config --global user.email "matheus@fantinel.dev"
+git config --global user.email "matfantinel@gmail.com"
 
 #Install nodeJS
 echo "----------------------------------- Installing nodeJS"
@@ -17,7 +17,7 @@ sudo apt install snapd -y
 
 #Install dotnet-core SDK version 2.2 (needed for project I work on)
 echo "----------------------------------- Installing .NET Core SDK"
-sudo snap install dotnet-sdk --channel=2.2/stable --classic
+sudo snap install dotnet-sdk --channel=2.1/stable --classic
 
 sudo snap alias dotnet-sdk.dotnet dotnet
 sudo ln -sv /snap/dotnet-sdk/current/dotnet /usr/local/bin/dotnet
